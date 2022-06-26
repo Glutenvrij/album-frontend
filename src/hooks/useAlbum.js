@@ -18,7 +18,7 @@ export function useAlbum(url, defaultResponse, id) {
 
     async function updateAlbum(url, album) {
         try {
-            const response = await fetch(url + `/put/${id}`, {
+            const response = await fetch(url + `/${id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -37,7 +37,7 @@ export function useAlbum(url, defaultResponse, id) {
 
     async function removeAlbum(url, id) {
         try {
-            const response = await fetch(url + `/delete/${id}`, {
+            const response = await fetch(url + `/${id}`, {
                 method: "DELETE"
             });
 

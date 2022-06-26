@@ -1,33 +1,5 @@
 import { useState, useEffect } from "react";
 
-// export function useAlbums(endpoint) {
-//     const [albums, setAlbums] = useState([]);
-    
-//     useEffect(() => {
-//         const request = fetch(endpoint, {
-//                          method: 'GET',
-//                          mode: 'no-cors',
-//                          headers: {
-//                              "Access-Control-Allow-Origin": "*"
-//                          }
-//                        });
-
-//         request
-//             .then((apiResponse) => {
-//                 if (!apiResponse.ok) {
-//                     console.error(apiResponse.statusText);
-//                     return;
-//                 }
-
-//                 return apiResponse.json();
-//             })
-//             .then((apiResult) => {
-//                 setAlbums(apiResult);
-//             });
-//     }, []);
-//     console.log(albums);
-//     return albums;
-// };
 export function useAlbums(url) {
     const [data, setData] = useState([]);
 
@@ -53,7 +25,7 @@ export function useAlbums(url) {
 
     useEffect(() => {
         getDataFromAPI(url);
-    }, [data]);
+    }, []);
 
     return data;
 };

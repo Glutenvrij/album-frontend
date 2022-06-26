@@ -1,7 +1,7 @@
 export function useCreateAlbum() {
     async function postAlbum(url, album) {
         try {
-            const response = await fetch(url + `/post`, {
+            const response = await fetch(url, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
