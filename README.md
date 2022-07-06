@@ -5,8 +5,9 @@ Jan Roozemond - 0980888
 Klik op de naam van het album en niet op edit om naar het edit scherm te gaan
 
 # links
-http://cnsd-react-app-537734144164.s3-website-us-east-1.amazonaws.com/
-https://github.com/BoostedBonobo/album-frontend
+- http://cnsd-react-app-537734144164.s3-website-us-east-1.amazonaws.com/
+- https://github.com/BoostedBonobo/album-frontend
+- http://alb-album-209244946.us-east-1.elb.amazonaws.com/api/album
 
 
 # Getting Started with Create React App
